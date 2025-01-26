@@ -75,6 +75,7 @@ h1 {
 section > p {
   font-weight: 400;
   font-size: 0.84rem;
+  opacity: 0.8;
 }
 
 nav {
@@ -106,7 +107,7 @@ a {
 
 /* Hover States */
 a:hover,
-a:focus {
+a:focus-visible {
   background-color: var(--color-green);
   cursor: pointer;
   color: var(--color-grey-800);
