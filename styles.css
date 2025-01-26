@@ -29,7 +29,6 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-
 }
 
 .main-content {
@@ -37,60 +36,100 @@ body {
   background-color: var(--color-grey-800);
   padding: 38px;
   width: 365px;
+  height: 580px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 25px;
-
+  justify-content: space-around;
+  gap: 10px;
 }
 
-section{
-    display: flex;
-    flex-direction: column;
-    gap:24px;
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-.location-description{
-    color: var(--color-green);
-    font-weight: 600;
-    font-size: 0.8rem;
-    letter-spacing: 0.35px;
+.location-description {
+  color: var(--color-green);
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.3px;
 }
 
-img{
-    width: 29%;
-    border-radius: 50%;
+img {
+  width: 29%;
+  border-radius: 50%;
 }
 
-h1{
-    font-size: 1.45rem;
-    font-weight: 400;
-    padding-bottom: 9px;
+h1 {
+  font-size: 1.42rem;
+  font-weight: 400;
+  padding-bottom: 10px;
 }
 
-.profile-information{
-    padding-bottom: 2.5px;
+.profile-information {
+  padding-bottom: 3px;
 }
 
-section > p{
-    font-weight: 400;
-    font-size: 0.83rem;
+section > p {
+  font-weight: 400;
+  font-size: 0.84rem;
 }
 
-ul{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+nav {
+  padding-top: 15px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 li {
-  text-decoration: none;
   list-style-type: none;
-  background-color: var(--color-grey-700);
-  border-radius: 7px;
+
   font-weight: 600;
-  padding: 14px 13px;
   font-size: 0.8rem;
   letter-spacing: 0.4px;
+}
+
+a {
+  background-color: var(--color-grey-700);
+  text-decoration: none;
+  color: var(--color-white);
+  display: block;
+  padding: 14px 13px;
+  border-radius: 7px;
+}
+
+/* Hover States */
+a:hover,
+a:focus {
+  background-color: var(--color-green);
+  cursor: pointer;
+  color: var(--color-grey-800);
+}
+
+/* For devices smaller than 600px */
+@media only screen and (max-width: 600px) {
+  .main-content {
+    width: 325px;
+    padding: 25px;
+    justify-content: space-between;
+  }
+
+  img {
+    width: 32%;
+  }
+
+  li {
+    font-size: 0.85rem;
+  }
+
+  h1 {
+    padding-top: 5px;
+    font-size: 1.5rem;
+  }
 }
